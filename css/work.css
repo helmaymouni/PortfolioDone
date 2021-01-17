@@ -1,0 +1,57 @@
+.txt-style2{
+    margin-left: 8%;
+    font-family: sans-serif;
+    color: #BDBDBD;
+    font-size: 20px;
+    padding-top: 2%;
+    
+}
+
+.space{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+}
+
+.about-cta2{
+    margin-left: 2%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 2%;
+}
+
+.about-cta2 .go-to-about2{
+    font-family: sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.about-cta2 .go-to-about2 .about-txt2{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+    font-size: 12px;
+}
+.about-cta2 .go-to-about2 .about-txt2::after{
+    content: '>';
+    position: absolute;
+    top: -8px;
+    right: -30px;
+    color: #f0860c;
+    font-size: 30px;
+}
+.about-cta2 .go-to-about2 .about-txt3{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+    font-weight: bold;
+    line-height: 2.38105;
+}
+.tableStyle{
+    margin-left: 8%;
+}
+
