@@ -1,0 +1,30 @@
+.about-title{
+    margin-left: 7%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 2%;
+    width: 65%;
+}
+
+.about-cta1{
+    margin-left: 7%;
+    font-family: sans-serif;
+    color:#BDBDBD;
+    font-size: 18px;
+    padding-bottom: 2%;
+}
+
+.about-cta1 .go-to-about1{
+    font-family: sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+.about-cta1 .go-to-about1 .about-txt1{
+    color: #f0860c;
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+}

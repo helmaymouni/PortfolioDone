@@ -40,7 +40,7 @@ nav ul li:nth-child(5){
 }
 
 .Contact-style1{
-    margin-left: 8%;
+    margin-left: 7%;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
@@ -50,11 +50,14 @@ nav ul li:nth-child(5){
 }
 
 .Contact-style2{
-    margin-left: 8%;
+    margin-left: 7%;
     font-family: sans-serif;
     color: #BDBDBD;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 2%;
+    letter-spacing: .01em;
+    padding-inline-start: 0;
+    line-height: 2.38105;
     
 }
 
@@ -67,7 +70,7 @@ nav ul li:nth-child(5){
 }
 
 .Contact-style3{
-    margin-left: 8%;
+    margin-left: 7%;
     font-family: sans-serif;
     color: white;
     font-size: 13px;
