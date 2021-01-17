@@ -38,10 +38,10 @@
 .about-cta2 .go-to-about2 .about-txt2::after{
     content: '>';
     position: absolute;
-    top: -8px;
-    right: -30px;
+    top: -3px;
+    right: -17px;
     color: #f0860c;
-    font-size: 30px;
+    font-size: 20px;
 }
 .about-cta2 .go-to-about2 .about-txt3{
     color: white;
@@ -53,5 +53,23 @@
 }
 .tableStyle{
     margin-left: 8%;
+}
+
+.test{
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.styleImage  {
+    position: absolute;
+    top :0;
+    right: 5px;
+}
+
+.styleImage2{
+    position: absolute;
+    top :0;
+    right: 10px;
 }
 
