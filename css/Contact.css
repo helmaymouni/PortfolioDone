@@ -39,7 +39,7 @@ nav ul li:nth-child(5){
     height: 100%;
 }
 
-.Contact-style1{
+.txt-style1{
     margin-left: 7%;
     font-family: sans-serif;
     font-weight: bold;
@@ -49,7 +49,7 @@ nav ul li:nth-child(5){
     width: 65%;
 }
 
-.Contact-style2{
+.txt-style2{
     margin-left: 7%;
     font-family: sans-serif;
     color: #BDBDBD;
@@ -69,7 +69,7 @@ nav ul li:nth-child(5){
     text-decoration: none;
 }
 
-.Contact-style3{
+.txt-style3{
     margin-left: 7%;
     font-family: sans-serif;
     color: white;
