@@ -53,8 +53,25 @@ nav ul li:nth-child(5){
     font-size: 50px;
     padding-bottom: 2%;
     width: 65%;
+    animation: text 3s 1;
 }
 
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -1000px;
+    }
+
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -1000px;
+    }
+
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -1000px;
+    }
+}
 .home-skills{
     margin-left: 7%;
     padding-inline-start: 0;
