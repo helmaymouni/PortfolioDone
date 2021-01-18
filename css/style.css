@@ -44,6 +44,35 @@ nav ul li:nth-child(5){
     font-size: 25px;
     padding-top: 100px;
     padding-bottom: 2%;
+    animation-name: animation-home;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+@keyframes animation-home{
+    0%{
+        padding-left: 10px;
+        color: red;
+     }
+    25%{
+        padding-left: -10px;
+        color: blue;
+    }
+    50%{
+        padding-left: 10px;
+        color: chartreuse;
+    }
+    75%{
+        padding-left: -10px;
+        color: cyan;
+    }
+    100%{
+        padding-left: 10px;
+        color:#f0860c;
+    }
 }
 .home-profession{
     margin-left: 7%;
@@ -53,8 +82,16 @@ nav ul li:nth-child(5){
     font-size: 50px;
     padding-bottom: 2%;
     width: 65%;
+    animation: animation-profession 1000ms 1;
 }
-
+@keyframes animation-profession{
+    0%{
+        margin-left: 100%; 
+    }
+    100%{
+        margin-left: 7%;
+    }
+}
 .home-skills{
     margin-left: 7%;
     padding-inline-start: 0;
@@ -65,7 +102,51 @@ nav ul li:nth-child(5){
     font-weight: 400; 
     letter-spacing: .01em;
     margin-bottom: 14px;
-    opacity: 1;
+    opacity: 0;
+}
+.home-skills li:nth-child(1){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+.home-skills li:nth-child(2){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 200ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+.home-skills li:nth-child(3){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 400ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+.home-skills li:nth-child(4){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 600ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+@keyframes animation-li{
+    0%{
+        opacity: 0;
+    }
+   100%{
+        opacity: 1;
+    }
 }
 .home-skills li a{
     color: #ccc;
@@ -77,7 +158,6 @@ nav ul li:nth-child(5){
     color: white;
     font-size: 18px;
     padding-bottom: 2%;
-    margin-top: -58px;
 }
 
 .about-cta .go-to-about{
@@ -94,9 +174,26 @@ nav ul li:nth-child(5){
 .about-cta .go-to-about .about-txt::after{
     content: '>';
     position: absolute;
-    top: -8px;
-    right: -30px;
+    margin-top: 2%;
+    margin-left: 2.5%;
     color: #f0860c;
-    font-size: 30px;
+}
+.about-cta .go-to-about .about-txt:hover,.about-cta .go-to-about .about-txt:hover::after{
+    animation-name: animation-about;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes animation-about{
+    0%{
+       font-size: large;
+    }
+    100%{
+       font-size: x-large;
+       color:violet;
+    }
 }
 
