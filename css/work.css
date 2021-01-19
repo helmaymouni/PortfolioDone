@@ -53,11 +53,12 @@ body{
     padding-bottom: 2%;
     margin-top: -58px;
 }
-.about-cta3 .go-to-about{
+.about-cta3 .go-to-about2{
+    font-family: sans-serif;
     font-size: 18px;
     text-decoration: none;
 }
-.about-cta3 .go-to-about .about-txt{
+.about-cta3 .go-to-about2 .about-txt{
     color: #f0860c;
     text-decoration: none;
     font-weight: 300;
@@ -108,7 +109,6 @@ img{
     width: 65%;
     animation: text 3s 1;
 }
-
 .txt-style2{
     margin-left: 7%;
     color: #BDBDBD;
@@ -117,5 +117,4 @@ img{
     letter-spacing: .01em;
     padding-inline-start: 0;
     line-height: 2.38105;
-    
 }
