@@ -1,6 +1,7 @@
 body{
     overflow: auto;
     background-color: black;
+    font-family: "robotoregular";
 }
 header{
     margin-top: 15px;
@@ -9,7 +10,6 @@ header{
 nav ul li a {
     padding: 20px;
     color: white;
-    font-family: sans-serif;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
@@ -39,7 +39,6 @@ nav ul li:nth-child(5){
 }
 .home-name{
     margin-left: 7%;
-    font-family: sans-serif;
     color: white;
     font-size: 25px;
     padding-top: 100px;
@@ -76,7 +75,6 @@ nav ul li:nth-child(5){
 }
 .home-profession{
     margin-left: 7%;
-    font-family: sans-serif;
     font-weight: bold;
     color: white;
     font-size: 50px;
@@ -117,7 +115,7 @@ nav ul li:nth-child(5){
     animation-name: animation-li;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 200ms;
+    animation-delay: 300ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -126,7 +124,7 @@ nav ul li:nth-child(5){
     animation-name: animation-li;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 400ms;
+    animation-delay: 600ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -135,7 +133,7 @@ nav ul li:nth-child(5){
     animation-name: animation-li;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 600ms;
+    animation-delay: 900ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -154,14 +152,12 @@ nav ul li:nth-child(5){
 }
 .about-cta{
     margin-left: 7%;
-    font-family: sans-serif;
     color: white;
     font-size: 18px;
     padding-bottom: 2%;
 }
 
 .about-cta .go-to-about{
-    font-family: sans-serif;
     font-size: 18px;
     text-decoration: none;
 }
@@ -196,4 +192,3 @@ nav ul li:nth-child(5){
        color:violet;
     }
 }
-

@@ -1,6 +1,8 @@
+body{
+  font-family: "robotoregular";
+} 
 .about-title{
     margin-left: 7%;
-    font-family: sans-serif;
     font-weight: bold;
     color: white;
     font-size: 50px;
@@ -8,17 +10,24 @@
     padding-bottom: 2%;
     width: 65%;
 }
-
+.txt-style2{
+  margin-left: 7%;
+  color: #BDBDBD;
+  font-size: 18px;
+  padding-top: 2%;
+  letter-spacing: .01em;
+  padding-inline-start: 0;
+  line-height: 2.38105;
+  
+}
 .about-cta1{
     margin-left: 7%;
-    font-family: sans-serif;
     color:#BDBDBD;
     font-size: 18px;
     padding-bottom: 2%;
 }
 
 .about-cta1 .go-to-about1{
-    font-family: sans-serif;
     font-size: 18px;
     text-decoration: none;
 }
