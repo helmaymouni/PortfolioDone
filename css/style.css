@@ -175,7 +175,7 @@ nav ul li:nth-child(5){
     content: '>';
     position: absolute;
     margin-top: 2%;
-    margin-left: 2.5%;
+    margin-right: 2.5%;
     color: #f0860c;
 }
 .about-cta .go-to-about .about-txt:hover,.about-cta .go-to-about .about-txt:hover::after{
