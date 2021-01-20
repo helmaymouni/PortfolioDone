@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio ElMaymouni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helmaymouni/PortfolioDone.git"
+  },
+  "author": "EL Maymouni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helmaymouni/PortfolioDone/issues"
+  },
+  "homepage": "https://github.com/helmaymouni/PortfolioDone#readme"
+}
