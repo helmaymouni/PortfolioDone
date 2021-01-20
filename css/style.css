@@ -1,0 +1,194 @@
+body{
+    overflow: auto;
+    background-color: black;
+    font-family: "robotoregular";
+}
+header{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+nav ul li a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .02em;
+}
+nav ul li a.active {
+    color: #f0860c;
+}
+
+
+nav ul li {
+    display: inline;
+    top : 10px;
+}
+
+nav ul li:nth-child(5){
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 85%;
+}
+
+.section {
+    background-image: url(https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/5b47654a49f3e1543ba2a603_180712%20-%20background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.home-name{
+    margin-left: 7%;
+    color: white;
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 2%;
+    animation-name: animation-home;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+@keyframes animation-home{
+    0%{
+        padding-left: 10px;
+        color: red;
+     }
+    25%{
+        padding-left: -10px;
+        color: blue;
+    }
+    50%{
+        padding-left: 10px;
+        color: chartreuse;
+    }
+    75%{
+        padding-left: -10px;
+        color: cyan;
+    }
+    100%{
+        padding-left: 10px;
+        color:#f0860c;
+    }
+}
+.home-profession{
+    margin-left: 7%;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    padding-bottom: 2%;
+    width: 65%;
+    animation: animation-profession 1000ms 1;
+}
+@keyframes animation-profession{
+    0%{
+        margin-left: 100%; 
+    }
+    100%{
+        margin-left: 7%;
+    }
+}
+.home-skills{
+    margin-left: 7%;
+    padding-inline-start: 0;
+}
+.home-skills li{
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400; 
+    letter-spacing: .01em;
+    margin-bottom: 14px;
+    opacity: 0;
+}
+.home-skills li:nth-child(1){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+.home-skills li:nth-child(2){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 300ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+.home-skills li:nth-child(3){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 600ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+.home-skills li:nth-child(4){
+    animation-name: animation-li;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 900ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+@keyframes animation-li{
+    0%{
+        opacity: 0;
+    }
+   100%{
+        opacity: 1;
+    }
+}
+.home-skills li a{
+    color: #ccc;
+    text-decoration: none;
+}
+.about-cta{
+    margin-left: 7%;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 2%;
+}
+
+.about-cta .go-to-about{
+    font-size: 18px;
+    text-decoration: none;
+}
+.about-cta .go-to-about .about-txt{
+    color: #f0860c;
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+}
+.about-cta .go-to-about .about-txt::after{
+    content: '>';
+    position: absolute;
+    margin-top: 2%;
+    margin-right: 2.5%;
+    color: #f0860c;
+}
+.about-cta .go-to-about .about-txt:hover,.about-cta .go-to-about .about-txt:hover::after{
+    animation-name: animation-about;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes animation-about{
+    0%{
+       font-size: large;
+    }
+    100%{
+       font-size: x-large;
+       color:violet;
+    }
+}
