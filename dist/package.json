@@ -17,13 +17,7 @@
   },
   "homepage": "https://github.com/helmaymouni/PortfolioDone#readme",
   "devDependencies": {
-<<<<<<< HEAD
     "gulp": "^4.0.2"
-=======
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
->>>>>>> f64aa316f444b2629841e327b0f66b1dab008d00
   },
   "dependencies": {
     "autoprefixer": "^9.7.6",
@@ -33,14 +27,8 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-load-plugins": "^2.0.6",
     "gulp-postcss": "^8.0.0",
-<<<<<<< HEAD
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.0.1"
-=======
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-terser": "^2.0.1",
-    "gulp-uglifycss": "^1.1.0"
->>>>>>> f64aa316f444b2629841e327b0f66b1dab008d00
   }
 }
