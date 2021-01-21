@@ -70,7 +70,7 @@ nav ul li:nth-child(5){
     }
     100%{
         padding-left: 10px;
-        color:#f0860c;
+        color:white;
     }
 }
 .home-profession{
@@ -80,14 +80,20 @@ nav ul li:nth-child(5){
     font-size: 50px;
     padding-bottom: 2%;
     width: 65%;
-    animation: animation-profession 1000ms 1;
+    animation-name: animation-home-profession;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-delay: 20000ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
 }
-@keyframes animation-profession{
+@keyframes animation-home-profession{
     0%{
-        margin-left: 100%; 
+        opacity: 0;
     }
-    100%{
-        margin-left: 7%;
+   100%{
+        opacity: 1;
     }
 }
 .home-skills{
@@ -106,7 +112,7 @@ nav ul li:nth-child(5){
     animation-name: animation-li;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 0;
+    animation-delay: 800ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -115,7 +121,7 @@ nav ul li:nth-child(5){
     animation-name: animation-li;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 300ms;
+    animation-delay: 1200ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -124,7 +130,7 @@ nav ul li:nth-child(5){
     animation-name: animation-li;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 600ms;
+    animation-delay: 1600ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -133,7 +139,7 @@ nav ul li:nth-child(5){
     animation-name: animation-li;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 900ms;
+    animation-delay: 2000ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -178,7 +184,7 @@ nav ul li:nth-child(5){
     animation-name: animation-about;
     animation-duration: 2000ms;
     animation-timing-function: linear;
-    animation-delay: 0;
+    animation-delay: 1800ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
@@ -186,9 +192,10 @@ nav ul li:nth-child(5){
 @keyframes animation-about{
     0%{
        font-size: large;
+       opacity: 0;
     }
     100%{
        font-size: x-large;
-       color:violet;
+       opacity: 1;
     }
 }
