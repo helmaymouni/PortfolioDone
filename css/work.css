@@ -64,7 +64,7 @@ body{
     font-weight: 300;
     position: relative;
 }
-.about-cta .go-to-about .about-txt::after{
+.about-cta3 .go-to-about2 .about-txt::after{
     content: '>';
     position: absolute;
     top: -8px;
@@ -75,13 +75,13 @@ body{
 .tableStyle{
     margin-left: 7%;
 }
-.test{
+.styleImage{
     position: relative;
     width: 350px;
     height: 150px;
     margin-top: 15px;
 }
-.styleImage  {
+.styleImage1{
     position: absolute;
     top: -14px;
     right: -3px;
