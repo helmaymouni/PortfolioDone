@@ -1,0 +1,179 @@
+$primary-color:#BDBDBD;
+$backgroundColor:black;
+$styleColor: #f0860c;
+$font-stack:"robotoregular";
+$marginLeft:7%;
+
+@mixin styleText {
+    margin-left: $marginLeft;
+    color:$primary-color;
+    padding-bottom: 2%;
+}
+@mixin animationText {
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;  
+}
+body{
+    overflow: auto;
+    background-color: $backgroundColor;
+    font-family: $font-stack;
+}
+header{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+nav ul li{
+    display: inline;
+    top : 10px;
+    a {
+        padding: 20px;
+        color:$primary-color;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: .02em;
+    }
+    a.active {
+        color:$styleColor;
+    }
+}
+nav ul li:nth-child(5){
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 85%;
+}
+section {
+    background-image: url(https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/5b47654a49f3e1543ba2a603_180712%20-%20background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.home-name{
+    @include styleText();
+    font-size: 25px;
+    padding-top: 100px;
+    @include animationText();
+    animation-name: animation-home;
+    animation-delay: 0;
+}
+@keyframes animation-home{
+    0%{
+        padding-left: 10px;
+        color: red;
+     }
+    25%{
+        padding-left: -10px;
+        color: blue;
+    }
+    50%{
+        padding-left: 10px;
+        color: chartreuse;
+    }
+    75%{
+        padding-left: -10px;
+        color: cyan;
+    }
+    100%{
+        padding-left: 10px;
+        color:white;
+    }
+}
+.home-profession{
+    @include styleText();
+    font-weight: bold;
+    font-size: 50px;
+    width: 65%;
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-home-profession;
+    animation-delay: 400ms;
+}
+@keyframes animation-home-profession{
+    0%{
+        opacity: 0;
+    }
+   100%{
+        opacity: 1;
+    }
+}
+.home-skills{
+    margin-left: $marginLeft;
+    padding-inline-start: 0;
+    li{
+        font-size: 21px;
+        line-height: 1.38105;
+        font-weight: 400; 
+        letter-spacing: .01em;
+        margin-bottom: 14px;
+        opacity: 0;
+        a{
+            color: #ccc;
+            text-decoration: none;
+        }
+    }
+}
+.home-skills li:nth-child(1){
+    @include animationText();
+    animation-name: animation-li;
+    animation-delay: 800ms;
+}
+.home-skills li:nth-child(2){
+    @include animationText();
+    animation-name: animation-li;
+    animation-delay: 1200ms;
+}
+.home-skills li:nth-child(3){
+    @include animationText();
+    animation-name: animation-li;
+    animation-delay: 1600ms;
+}
+.home-skills li:nth-child(4){
+    @include animationText();
+    animation-name: animation-li;
+    animation-delay: 2000ms;
+}
+@keyframes animation-li{
+    0%{
+        opacity: 0;
+    }
+   100%{
+        opacity: 1;
+    }
+}
+.about-cta{
+    @include styleText();
+    font-size: 18px;
+    .go-to-about{
+        text-decoration: none;
+        .about-txt{
+            color:$styleColor;
+            font-weight: 300;
+            position: relative;
+        }
+    }
+}
+.about-cta .go-to-about .about-txt::after{
+    content: '>';
+    position: absolute;
+    margin-top: 2%;
+    margin-right: 2.5%;
+    color: $styleColor;
+}
+.about-cta .go-to-about .about-txt:hover,.about-cta .go-to-about .about-txt:hover::after{
+    @include animationText();
+    animation-name: animation-about;
+    animation-delay: 0ms;
+}
+@keyframes animation-about{
+    0%{
+       font-size: large;
+       opacity: 0;
+    }
+    100%{
+       font-size: x-large;
+       opacity: 1;
+    }
+}

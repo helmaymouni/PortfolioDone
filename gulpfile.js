@@ -1,40 +1,49 @@
-const gulp = require ('gulp');
+const { watch,src,dest,parallel,series } = require('gulp');
+var gulp = require ('gulp');
+const sourcemaps = require('gulp-sourcemaps');
+const concat = require('gulp-concat');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const terser = require('gulp-terser');
+const imagemin =require('gulp-imagemin');
+const distRoot ='./dist';
+const sass = require('gulp-sass');
 
-const plugins = require('gulp-load-plugins')({
-  pattern:'*',
-  rename:{
-    jshint:'jslint'
-  }
-})
+/////////////////////////////////////////////////////////////////////////////////////
+
+plugins = require('gulp-load-plugins')({
+    pattern:'*',
+    rename:{
+      jshint:'jslint'
+    }
+});
+  
 plugins.browserSync.create();
 async function debug() {
-  await console.log(plugins);
+    await console.log(plugins);
 }
-const { watch,src, parallel,dest,series } = require('gulp');
-const sass = require ('gulp-sass');
-const sourcemaps = require ('gulp-sourcemaps');
-const postcss = require ('gulp-postcss');
-const cssnano = require ('cssnano');
-const autoprefixer = require ('autoprefixer');
-const concat = require ('gulp-concat');
-const terser = require ('gulp-terser');
-const imagemin = require ('gulp-imagemin');
-const distRoot = './dist' ;
+  
+//////////////////////////////////////// CSS ////////////////////////////////////////
 
-                    /***** CSS *******/
-
-function cssTask() {
+function cssTask(){
     return src('css/**/*.css')
-      .pipe(sourcemaps.init())
-      .pipe(concat('style.css'))
-      .pipe(postcss([
-          autoprefixer(),cssnano()
-      ]))
-      .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest('dist/css'));
-  }
+    .pipe(sourcemaps.init())
+    .pipe(concat('style.css'))
+    .pipe(postcss([autoprefixer(),cssnano()]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/css'));
+    }
 
-                     /***** JS *******/
+//////////////////////////////////////// SASS ////////////////////////////////////////
+
+function sassTask(){
+  return gulp.src('scss/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('dist/scss'));
+}
+    
+//////////////////////////////////////// JS ////////////////////////////////////////
 
 function jsTask() {
     return src('js/**/*.js')
@@ -45,58 +54,67 @@ function jsTask() {
       .pipe(gulp.dest('dist/js'));
   }
 
-                 /***** HTML *******/
+//////////////////////////////////////// JQuery ////////////////////////////////////////
 
-function copyHtml() {
+function jqueryTask() {
+  return src('js/jquery.js')
+    .pipe(gulp.dest('dist/js'));
+}
+
+//////////////////////////////////////// HTML ////////////////////////////////////////
+
+function htmlTask() {
     return src('*.html')
       .pipe(gulp.dest('dist'));
   }
 
-function copyHtmlCommon() {
+function htmlCommonTask() {
     return src('common/**/*.html')
       .pipe(gulp.dest('dist/common'));
   }
 
-               /***** FONT *******/
+//////////////////////////////////////// FONT ////////////////////////////////////////
 
-  function copyFont() {
+function fontTask() {
     return src('font/**/*')
     .pipe(gulp.dest('dist/font'));
   }
 
-              /***** image *******/
+//////////////////////////////////////// JSON ////////////////////////////////////////
 
- function copyImage() {
+function jsonTask() {
+    return src('*.json')
+    .pipe(gulp.dest('dist'));
+    
+}
+//////////////////////////////////////// Image ////////////////////////////////////////
+
+function imageTask() {
     return src('img/**/*')
     .pipe(imagemin())    //ppur mimiser la taille de l'image 
     .pipe(gulp.dest('dist/img'));
     
-  }
-
-               /***** JSON *******/
-
- function copyJson() {
-  return src('*.json')
-  .pipe(gulp.dest('dist'));
-  
 }
-   /***** watch *******/
 
-function watchTask() {
-  watch(parallel((jsTask,cssTask,copyHtml,copyFont,copyHtmlCommon,copyImage,copyJson)))
+//////////////////////////////////////////////////////////////////////////////////////  
+
+function watchTask(){
+    watch(parallele(cssTask,jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask));
 }
 
 exports.cssTask=cssTask;
 exports.jsTask=jsTask;
-exports.copyHtml=copyHtml;
-exports.copyFont=copyFont;
-exports.copyHtmlCommon=copyHtmlCommon;
-exports.copyImage=copyImage;
-exports.copyJson=copyJson;
- 
-             /***** gulp-serve *******/
+exports.htmlCommonTask=htmlCommonTask;
+exports.htmlTask=htmlTask;
+exports.fontTask=fontTask;
+exports.jsonTask=jsonTask;
+exports.imageTask=imageTask;
+exports.jqueryTask=jqueryTask;
+exports.sassTask=sassTask;
 
-gulp.task('serve',gulp.series(parallel(copyJson,cssTask,jsTask,copyHtml,copyFont,copyHtmlCommon,copyImage),
+//////////////////////////////////////// Servce ////////////////////////////////////////
+
+gulp.task('serve',gulp.series(parallel(cssTask,jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask),
   function () {
      plugins.browserSync.init({
        port:3010,

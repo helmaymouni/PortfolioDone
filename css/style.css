@@ -18,20 +18,16 @@ nav ul li a {
 nav ul li a.active {
     color: #f0860c;
 }
-
-
 nav ul li {
     display: inline;
     top : 10px;
 }
-
 nav ul li:nth-child(5){
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 85%;
 }
-
-.section {
+.section{
     background-image: url(https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/5b47654a49f3e1543ba2a603_180712%20-%20background.jpg);
     background-size: cover;
     width: 100%;
@@ -80,10 +76,11 @@ nav ul li:nth-child(5){
     font-size: 50px;
     padding-bottom: 2%;
     width: 65%;
+    opacity: 0;
     animation-name: animation-home-profession;
     animation-duration: 200ms;
     animation-timing-function: linear;
-    animation-delay: 20000ms;
+    animation-delay: 400ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;  
@@ -181,6 +178,7 @@ nav ul li:nth-child(5){
     color: #f0860c;
 }
 .about-cta .go-to-about .about-txt:hover,.about-cta .go-to-about .about-txt:hover::after{
+    opacity: 0;
     animation-name: animation-about;
     animation-duration: 2000ms;
     animation-timing-function: linear;
