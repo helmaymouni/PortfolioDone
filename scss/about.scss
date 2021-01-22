@@ -1,0 +1,42 @@
+@import "style";
+
+.about-title{
+    @include styleText();
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 100px;
+    width: 65%;  
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-title;
+    animation-delay: 600ms;
+}
+@keyframes animation-title{
+    0%{
+        opacity: 0;
+    }
+   100%{
+        opacity: 1;
+    }
+  }
+.animation-txt{
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-p;
+    animation-delay: 1200ms;
+}
+@keyframes animation-p {
+    0%{
+        opacity: 0;
+    }
+   100%{
+        opacity: 1;
+    }
+}
+.txt-style2{
+    @include styleText();
+    font-size: 18px;
+    letter-spacing: .01em;
+    padding-inline-start: 0;
+    line-height: 2.38105; 
+}
