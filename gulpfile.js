@@ -1,5 +1,5 @@
 const { watch,src,dest,parallel,series } = require('gulp');
-var gulp = require ('gulp');
+const gulp = require ('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const postcss = require('gulp-postcss');
@@ -39,7 +39,10 @@ function cssTask(){
 
 function sassTask(){
   return gulp.src('scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(concat('style.css'))
     .pipe(sass())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/scss'));
 }
     
@@ -99,10 +102,9 @@ function imageTask() {
 //////////////////////////////////////////////////////////////////////////////////////  
 
 function watchTask(){
-    watch(parallele(cssTask,jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask));
+    watch(parallele(jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask));
 }
 
-exports.cssTask=cssTask;
 exports.jsTask=jsTask;
 exports.htmlCommonTask=htmlCommonTask;
 exports.htmlTask=htmlTask;
@@ -114,7 +116,7 @@ exports.sassTask=sassTask;
 
 //////////////////////////////////////// Servce ////////////////////////////////////////
 
-gulp.task('serve',gulp.series(parallel(cssTask,jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask),
+gulp.task('serve',gulp.series(parallel(jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask),
   function () {
      plugins.browserSync.init({
        port:3010,
