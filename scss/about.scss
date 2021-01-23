@@ -4,7 +4,7 @@
     @include styleText();
     font-weight: bold;
     font-size: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
     width: 65%;  
     opacity: 0;
     @include animationText();
@@ -39,5 +39,6 @@
     letter-spacing: .01em;
     padding-inline-start: 0;
     line-height: 2.38105; 
+    margin-top: -25px;
 }
 
