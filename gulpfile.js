@@ -39,7 +39,7 @@ function cssTask(){
 //////////////////////////////////////// SASS ////////////////////////////////////////
 
 function sassTask(){
-  return gulp.src('scss/**/*.scss')
+  return gulp.src('scss/**/*')
     .pipe(sourcemaps.init())
     .pipe(concat('style.css'))
     .pipe(sass())
