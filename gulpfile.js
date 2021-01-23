@@ -8,7 +8,8 @@ const cssnano = require('cssnano');
 const terser = require('gulp-terser');
 const imagemin =require('gulp-imagemin');
 const distRoot ='./dist';
-const sass = require('gulp-sass');
+const sass =require('gulp-sass');
+
 
 /////////////////////////////////////////////////////////////////////////////////////
 
@@ -56,7 +57,6 @@ function jsTask() {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('dist/js'));
   }
-
 //////////////////////////////////////// JQuery ////////////////////////////////////////
 
 function jqueryTask() {
