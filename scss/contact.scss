@@ -1,0 +1,51 @@
+@import "style";
+@import "about";
+
+.txt-style3{
+    @include styleText();  
+    font-size: 13px;
+}
+.email{
+    font-size: 20px;
+    color: $styleColor;
+    margin-left: 0.5em;
+    text-decoration: none;
+    @include animationText();
+    animation-name: animation-email;
+    animation-delay: 0;
+}
+@keyframes animation-email{
+    0%{
+       font-size:small;
+       opacity: 0;
+    }
+    100%{
+       font-size:20px;
+       opacity: 1;
+    }
+}
+input,textarea{
+    border-radius: 8px;
+    width: 500px;
+    height: 40px;
+    background-color:#1C1C1C;
+    border: 2px solid #1C1C1C;
+}
+td{
+    padding-top: 1.5%;
+}
+textarea{
+    height: 120px;
+}
+button{
+    background-color:#1C1C1C;
+	width: 148px;
+	margin-top: 10px;
+    color: #f0860c;
+    font-weight: bold;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #1C1C1C;
+}
