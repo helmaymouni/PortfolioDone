@@ -55,7 +55,7 @@
 .about-cta3{
     @include styleText();
     font-size: 18px;
-    margin-top: -58px;
+    margin-top: -23px;
     .go-to-about2{
         font-family: sans-serif;
         text-decoration: none;
@@ -70,7 +70,7 @@
 .about-cta3 .go-to-about2 .about-txt::after{
     content: '>';
     position: absolute;
-    top: -8px;
+    top: -3px;
     right: -30px;
     color: $styleColor;
     font-size: 30px;
