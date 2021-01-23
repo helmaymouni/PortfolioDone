@@ -7,10 +7,6 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-.txt-style2{
-    @include styleText();
-    padding-top: 2%; 
-}
 .about-cta2{
     margin-left: 2%;
     color: $primary-color;
@@ -55,7 +51,7 @@
 .about-cta3{
     @include styleText();
     font-size: 18px;
-    margin-top: -23px;
+    margin-top: -6px;
     .go-to-about2{
         font-family: sans-serif;
         text-decoration: none;
@@ -77,6 +73,18 @@
 }
 .tableStyle{
     margin-left: $marginLeft;
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-image;
+    animation-delay: 1200ms;
+}
+@keyframes animation-image{
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
 }
 .styleImage{
     position: relative;
@@ -108,5 +116,24 @@ img{
     font-size: 50px;
     padding-top: 5%;
     width: 65%;
-    animation: text 3s 1;
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-workTitle;
+    animation-delay: 400ms;
+}
+.txt-style2{
+    @include styleText();
+    padding-top: 2%; 
+    opacity: 0;
+    @include animationText();
+    animation-name: animation-workTitle;
+    animation-delay: 800ms;
+}
+@keyframes animation-workTitle{
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
 }
