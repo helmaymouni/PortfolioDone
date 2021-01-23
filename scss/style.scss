@@ -146,12 +146,15 @@ nav ul li{
 .about-cta{
     @include styleText();
     font-size: 18px;
+    text-decoration: none;
     .go-to-about{
         text-decoration: none;
         .about-txt{
             color:$styleColor;
             font-weight: 300;
             position: relative;
+            text-decoration: none;
+
         }
     }
 }
