@@ -57,6 +57,10 @@ function webFontTask() {
 
 function cssawesomeTask(){
   return src('fontawesome/css/**/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(concat('style.css'))
+    .pipe(postcss([autoprefixer(),cssnano()]))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/fontawesome/css'));
   }
 
