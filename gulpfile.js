@@ -46,7 +46,25 @@ function sassTask(){
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/scss'));
 }
-    
+   
+//////////////////////////////////////// webFontawesome ////////////////////////////////////////
+
+function webFontTask() {
+  return src('fontawesome/webfonts/**/*')
+    .pipe(gulp.dest('dist/fontawesome/webfonts'));
+}
+//////////////////////////////////////// CSSFontAwesome ////////////////////////////////////////
+
+function cssawesomeTask(){
+  return src('fontawesome/css/**/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(concat('style.css'))
+    .pipe(postcss([autoprefixer(),cssnano()]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/fontawesome/css'));
+  }
+
+
 //////////////////////////////////////// JS ////////////////////////////////////////
 
 function jsTask() {
@@ -102,7 +120,7 @@ function imageTask() {
 //////////////////////////////////////////////////////////////////////////////////////  
 
 function watchTask(){
-    watch(parallele(jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask));
+    watch(parallele(jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask,webFontTask,cssawesomeTask));
 }
 
 exports.jsTask=jsTask;
@@ -113,10 +131,12 @@ exports.jsonTask=jsonTask;
 exports.imageTask=imageTask;
 exports.jqueryTask=jqueryTask;
 exports.sassTask=sassTask;
+exports.webFontTask=webFontTask;
+exports.cssawesomeTask=cssawesomeTask;
 
 //////////////////////////////////////// Servce ////////////////////////////////////////
 
-gulp.task('serve',gulp.series(parallel(jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask),
+gulp.task('serve',gulp.series(parallel(jsTask,htmlTask,htmlCommonTask,fontTask, jsonTask,imageTask,jqueryTask,sassTask,webFontTask,cssawesomeTask),
   function () {
      plugins.browserSync.init({
        port:3010,
