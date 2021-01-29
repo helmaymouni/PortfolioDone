@@ -46,7 +46,14 @@ function sassTask(){
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/scss'));
 }
-    
+   
+//////////////////////////////////////// fontawesome ////////////////////////////////////////
+
+function ontawesomeTask() {
+  return src('scss/fontawesome/**/*')
+    .pipe(gulp.dest('dist/scss/fontawesome'));
+}
+
 //////////////////////////////////////// JS ////////////////////////////////////////
 
 function jsTask() {
