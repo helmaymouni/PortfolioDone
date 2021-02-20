@@ -1,139 +1,143 @@
 @import "style";
 @import "about";
 
-.space{
-    height: 400px;
+#workBoxLeft {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 40%;
+    height: auto;
+    margin: 40px auto;
+    margin-left: 7%;
+    background-color:$workBoxColor;
+    padding: 10px;
+    border-radius:20px;
+    mix-blend-mode: normal;
+    opacity: 0.93;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px; 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
-.about-cta2{
-    margin-left: 2%;
-    color: $primary-color;
-    font-size: 18px;
-    padding-bottom: 2%;
-    .go-to-about2{
-        text-decoration: none;
-        .about-txt2{
-            color: $primary-color;
-            text-decoration: none;
-            font-weight: 300;
-            position: relative;
-            font-size: 12px;
-        }
-    } 
-}
-.about-cta2 .go-to-about2 .about-txt2::after{
-    content: '>';
-    position: absolute;
-    top: -5px;
-    right: -17px;
-    color: $styleColor;
+#workBoxRight {
     font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 40%;
+    height: auto;
+    margin: 40px auto;
+    margin-right: 7%;
+    margin-left: 1%;
+    background-color:$workBoxColor;
+    padding: 10px;
+    border-radius:20px;
+    mix-blend-mode: normal;
+    opacity: 0.93;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;   
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
 }
-.about-cta2{
-    margin-left: 2%;
-    color: $primary-color;
-    font-size: 18px;
+.txt-work{
+    color:$cardsColor;
     padding-bottom: 2%;
-    .go-to-about2{
-        text-decoration: none;
-        .about-txt3{
-            color: $primary-color;
-            text-decoration: none;
-            font-weight: 300;
-            position: relative;
-            font-weight: bold;
-            line-height: 2.38105;
-        }
-    } 
+    font-size: 16px;
+    letter-spacing: .01em;
+    padding-inline-start: 0;
+    line-height: 2.38105; 
+    margin-top: -20px;
 }
-.about-cta3{
-    @include styleText();
-    font-size: 18px;
-    margin-top: -6px;
-    .go-to-about2{
-        font-family: sans-serif;
-        text-decoration: none;
-        .about-txt{
-            color: $styleColor;
-            text-decoration: none;
-            font-weight: 300;
-            position: relative;
-        }
-    }
+.txt-work2{
+    color:$cardsColor;
+    padding-bottom: 2%;
+    font-size: 11px;
+    letter-spacing: .01em;
+    padding-inline-start: 0;
+    line-height: 2; 
+    margin-top: 0px;
 }
-.about-cta3 .go-to-about2 .about-txt::after{
-    content: '>';
-    position: absolute;
-    top: -3px;
-    right: -30px;
-    color: $styleColor;
-    font-size: 30px;
+.flexWork{
+  display: flex;
+  flex-direction: row;
 }
-.tableStyle{
-    margin-left: $marginLeft;
-    opacity: 0;
-    @include animationText();
-    animation-name: animation-image;
-    animation-delay: 1200ms;
+.flexL{
+    width: 70%;
 }
-@keyframes animation-image{
-    0%{
-       opacity: 0;
-    }
-    100%{
-       opacity: 1;
-    }
+.flexR{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
-.styleImage{
-    position: relative;
-    width: 350px;
-    height: 150px;
-    margin-top: 15px;
+.flexrow{
+    display: flex;
+    flex-direction: row;
 }
-.styleImage1{
-    position: absolute;
-    top: -14px;
-    right: -3px;
-    width: 100%;
-    height: 100%;
+.hide{
+    display: none;
 }
-.styleImage2{
-    position: absolute;
-    top: 25px;
-    right: -70px;
-    width: 100%;
-    height: 100%;
+.taillediv1{
+    width: 60%;
 }
-img{
-    width: 100%;
-    height: 100%;
+.taillediv2{
+    width: 30%;
 }
-.txt-style1{
-    @include styleText();
+.taillediv3{
+    width: 10%;
+    margin-top: 2%;
+}
+.btnwork{
+    background-color: $primary-color;
+    border: 1px solid transparent;
+    border-radius: 200px;
+    margin-top: 0%;
+}
+.caseL{
+    width: 68px;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 20px;
+    margin-bottom: 12%;
+}
+.caseR{
+    width: 68px;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-bottom: 12%;
+}
+.buttonWork{
+    text-decoration: none;
+    width: 40%;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 20px;
+    padding: 1rem 2rem;
     font-weight: bold;
-    font-size: 50px;
-    padding-top: 5%;
-    width: 65%;
-    opacity: 0;
-    @include animationText();
-    animation-name: animation-workTitle;
-    animation-delay: 400ms;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;   
 }
-.txt-style2{
-    @include styleText();
-    padding-top: 2%; 
-    opacity: 0;
-    @include animationText();
-    animation-name: animation-workTitle;
-    animation-delay: 800ms;
+.txtcase{
+    color:$styleColor;
+    padding-bottom: 2%;
+    font-size: 11px;
+    letter-spacing: .01em;
+    padding-inline-start: 0;
+    line-height: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@keyframes animation-workTitle{
-    0%{
-       opacity: 0;
-    }
-    100%{
-       opacity: 1;
-    }
+.txtButton{
+    color:$cardsColor;
+    padding-bottom: 2%;
+    font-size: 14px;
+    letter-spacing: .01em;
+    padding-inline-start: 0;
+    line-height: 2; 
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

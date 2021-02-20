@@ -1,9 +1,18 @@
 @import "style";
 @import "about";
 
-.txt-style3{
-    @include styleText();  
-    font-size: 13px;
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: #BDBDBD;
+    padding-bottom: 2%;
+    letter-spacing: .01em;
+    padding-inline-start: 0;
+    line-height: 2.38105;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 49px;
+    width: 665px;
 }
 .email{
     font-size: 20px;
@@ -28,17 +37,15 @@ input,textarea{
     border-radius: 8px;
     width: 500px;
     height: 40px;
-    background-color:#1C1C1C;
-    border: 2px solid #1C1C1C;
+    background-color: $cardsColor;
+    border: 2px solid $cardsColor;
 }
-td{
-    padding-top: 1.5%;
-}
+
 textarea{
     height: 120px;
 }
-button{
-    background-color:#1C1C1C;
+.btn{
+    background-color:$cardsColor;
 	width: 148px;
 	margin-top: 10px;
     color: #f0860c;
@@ -47,5 +54,5 @@ button{
 	padding-top: 8px;
 	font-size: 18px;
     border-radius: 8px;
-    border: 2px solid #1C1C1C;
+    border: 2px solid $cardsColor;
 }
