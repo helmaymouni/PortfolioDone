@@ -22,7 +22,7 @@ $marginLeft:7%;
 .flex-SousHeader{
     display: flex;
     flex-direction: row;
-    margin-left: 4.5%;
+    margin-left: 3.75%;
 }
 .flexHeader{
     display: flex;
@@ -39,7 +39,7 @@ header{
 }
 .sousHeaderRight{
     width: 75%;
-    margin-left: 45%;
+    margin-left: 44.75%;
 }
 .HeaderLeft{
     width: 80%;
@@ -85,7 +85,7 @@ nav ul {
 }
 
 .home-name{
-    margin-left: 83px;
+    margin-left: $marginLeft;
     color:$primary-color;
     padding-bottom: 2%;
     font-size: 25px;
@@ -96,7 +96,7 @@ nav ul {
 }
 @keyframes animation-home{
     0%{
-        padding-left: 10px;
+        padding-left: 0%;
         color:$primary-color;
      }
     25%{
@@ -104,7 +104,7 @@ nav ul {
         color:$styleColor;
     }
     50%{
-        padding-left: 10px;
+        padding-left: 0%;
         color: $primary-color
     }
     75%{
@@ -112,12 +112,12 @@ nav ul {
         color:$styleColor;
     }
     100%{
-        padding-left: 10px;
+        padding-left: 0%;
         color:$primary-color;
     }
 }
 .home-profession{
-    margin-left: 83px;
+    margin-left: $marginLeft;
     color:$primary-color;
     padding-bottom: 2%;
     font-weight: bold;
@@ -226,8 +226,7 @@ nav ul {
     padding-inline-start: 0;
     line-height: 2.38105; 
     margin-top: -30px;
-    margin-left:87px;
-    //width: 665px;
+    margin-left:$marginLeft;
 }
 .position{
     position: relative;
@@ -298,8 +297,6 @@ nav ul {
     line-height: 1.38105; 
 }
 .txt-cards2{
-    width: 210px;
-    height: 74px;
     margin-left: 8px;
     margin-top: 10px;
     font-family: Sansation;
@@ -307,10 +304,9 @@ nav ul {
     font-weight: normal;
     font-size: 15px;
     line-height: 15px;
-    display: flex;
-    align-items: center;
     color: $primary-color;
-    line-height: 1.38105; 
+    line-height: 1.38105;  
+    display: flex;
 }
 .title-cards2{
     margin-left: 8px;
@@ -399,7 +395,7 @@ nav ul {
   color: #343434;
   display: flex;
   flex-direction: row;
-  margin-left:3%;
+  margin-left:2%;
   h1 {
     font-family: 'Bitter', serif;
     line-height: 1.1;
