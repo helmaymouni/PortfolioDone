@@ -40,7 +40,7 @@
     padding-inline-start: 0;
     line-height: 2.38105; 
     margin-top: -25px;
-    //margin-left:87px;
+    margin-left: $marginLeft;
     width: 85%;
 }
 .backgroudImg {
@@ -54,12 +54,12 @@
 .flexPosition{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    margin-left: 31px;
-}
+   }
 .tailleFlexText{
-    width: 80%;
+    width: 70%;
+    margin-left: 2%;
 }
 .tailleFlexImg{
-    width: 48%;
+    width: 35%;
+    margin-right: 2%;
 }

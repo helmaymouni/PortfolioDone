@@ -5,6 +5,7 @@
     font-family: 'Indie Flower', cursive;
     width: 40%;
     height: auto;
+    margin-left: $marginLeft;
     margin: 40px auto;
     background-color:$cardsColor;
     padding: 10px;
@@ -21,6 +22,7 @@
     font-family: 'Indie Flower', cursive;
     width: 40%;
     height: auto;
+    margin-right: $marginLeft;
     margin: 40px auto;
     background-color:$cardsColor;
     margin-left:-33px;
