@@ -39,22 +39,20 @@
     -moz-border-radius:20px;  
 }
 .txt-work{
-    color:$cardsColor;
-    padding-bottom: 2%;
     font-size: 16px;
-    letter-spacing: .01em;
-    padding-inline-start: 0;
-    line-height: 2.38105; 
+    font-family: 'Raleway', sans-serif;
     margin-top: -20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color:$cardsColor;
 }
 .txt-work2{
-    color:$cardsColor;
-    padding-bottom: 2%;
-    font-size: 11px;
-    letter-spacing: .01em;
-    padding-inline-start: 0;
-    line-height: 2; 
     margin-top: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60%;
+    color: #686868;
+    line-height: 1.5;
 }
 .flexWork{
   display: flex;
@@ -83,7 +81,7 @@
 }
 .taillediv3{
     width: 10%;
-    margin-top: 2%;
+    margin-top: 0%;
 }
 .btnwork{
     background-color: $primary-color;
@@ -152,3 +150,4 @@
     justify-content: end;
     margin-top: -10%;
 }
+
