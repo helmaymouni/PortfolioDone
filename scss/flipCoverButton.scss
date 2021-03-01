@@ -1,0 +1,1129 @@
+$blueE:#348dd3;
+$blue:#2672ae;
+$blueFonce:#143b5a;
+
+$orangeFonce:#f80;
+$orange: #ffa033;
+
+
+
+@font-face {
+  font-family: icon;
+  src: url("https://bennettfeely.com/fonts/icons.woff");
+}
+
+///////////////////// Hibernate //////////////////
+
+.hibernate-section, .hibernate-section * {
+  box-sizing: border-box;
+}
+
+.hibernate-section, .hibernate-section div {
+  transition-duration: 0.6s;
+}
+
+.hibernate-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.hibernate-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.hibernate-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color: $blue;
+}
+
+.hibernate-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.hibernate-inner, .hibernate-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.hibernate-inner:after, .hibernate-outer:after {
+  content: url('../img/logoHibernate.svg');
+}
+
+.hibernate-outer {
+  background-color:$blue;
+  transform: translateZ(0.25em);
+}
+
+.hibernate-inner {
+  background-color: $blueE;
+}
+
+.hibernate-section:hover {
+  background: #EBEFF2;
+}
+.hibernate-section:hover .hibernate-button {
+  opacity: 1;
+}
+.hibernate-section:hover .hibernate-cover {
+  transform: rotateY(-120deg);
+}
+.hibernate-section:hover .hibernate-inner {
+  background-color: $blue;
+}
+.hibernate-section:hover .hibernate-outer {
+  background-color: $blueFonce;
+}
+.hibernate-section:hover .hibernate-cover, .hibernate-section:hover .hibernate-inner, .hibernate-section:hover .hibernate-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+///////////////////// JPA //////////////////
+
+.jpa-section, .jpa-section * {
+  box-sizing: border-box;
+}
+
+.jpa-section, .jpa-section div {
+  transition-duration: 0.6s;
+}
+
+.jpa-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.jpa-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.jpa-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color: #2672ae;
+}
+
+.jpa-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.jpa-inner, .jpa-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.jpa-inner:after, .jpa-outer:after {
+  content: "JPA";
+}
+
+.jpa-outer {
+  background-color: #2672ae;
+  transform: translateZ(0.25em);
+}
+
+.jpa-inner {
+  background-color: #348dd3;
+}
+
+.jpa-section:hover {
+  background: #EBEFF2;
+}
+.jpa-section:hover .jpa-button {
+  opacity: 1;
+}
+.jpa-section:hover .jpa-cover {
+  transform: rotateY(-120deg);
+}
+.jpa-section:hover .jpa-inner {
+  background-color: #2672ae;
+}
+.jpa-section:hover .jpa-outer {
+  background-color: #143b5a;
+}
+.jpa-section:hover .jpa-cover, .jpa-section:hover .jpa-inner, .jpa-section:hover .jpa-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+///////////////////// Angular
+
+.angular-section, .angular-section * {
+  box-sizing: border-box;
+}
+
+.angular-section, .angular-section div {
+  transition-duration: 0.6s;
+}
+
+.angular-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.angular-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.angular-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color: #2672ae;
+}
+
+.angular-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.angular-inner, .angular-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.angular-inner::after, .angular-outer::after {
+  content: url('../img/logoAngular.svg');
+}
+
+.angular-outer {
+  background-color: #2672ae;
+  transform: translateZ(0.25em);
+}
+
+.angular-inner {
+  background-color: #348dd3;
+}
+
+.angular-section:hover {
+  background: #EBEFF2;
+}
+.angular-section:hover .angular-button {
+  opacity: 1;
+}
+.angular-section:hover .angular-cover {
+  transform: rotateY(-120deg);
+}
+.angular-section:hover .angular-inner {
+  background-color: #2672ae;
+}
+.angular-section:hover .angular-outer {
+  background-color: #143b5a;
+}
+.angular-section:hover .angular-cover, .angular-section:hover .angular-inner, .angular-section:hover .angular-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// Bootstrapp
+
+.bootstrap-section, .bootstrap-section * {
+  box-sizing: border-box;
+}
+
+.bootstrap-section, .bootstrap-section div {
+  transition-duration: 0.6s;
+}
+
+.bootstrap-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  margin-bottom: 3%;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.bootstrap-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.bootstrap-button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2672ae;
+  font-size: 11px;
+}
+
+.bootstrap-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.bootstrap-inner, .bootstrap-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.bootstrap-inner:after, .bootstrap-outer:after {
+  content: url('../img/logoBootstrap.svg');
+}
+
+.bootstrap-outer {
+  background-color: #2672ae;
+  transform: translateZ(0.25em);
+}
+
+.bootstrap-inner {
+  background-color: #348dd3;
+}
+
+.bootstrap-section:hover {
+  background: #EBEFF2;
+}
+.bootstrap-section:hover .bootstrap-button {
+  opacity: 1;
+}
+.bootstrap-section:hover .bootstrap-cover {
+  transform: rotateY(-120deg);
+}
+.bootstrap-section:hover .bootstrap-inner {
+  background-color: #2672ae;
+}
+.bootstrap-section:hover .bootstrap-outer {
+  background-color: #143b5a;
+}
+.bootstrap-section:hover .bootstrap-cover, .bootstrap-section:hover .bootstrap-inner, .bootstrap-section:hover .bootstrap-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// Jquery 
+
+.jquery-section, .jquery-section * {
+  box-sizing: border-box;
+}
+
+.jquery-section, .jquery-section div {
+  transition-duration: 0.6s;
+}
+
+.jquery-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.jquery-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.jquery-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color: #2672ae;
+}
+
+.jquery-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.jquery-inner, .jquery-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.jquery-inner:after, .jquery-outer:after {
+  content: url('../img/logoJquery.svg');
+}
+
+.jquery-outer {
+  background-color: #2672ae;
+  transform: translateZ(0.25em);
+}
+
+.jquery-inner {
+  background-color: #348dd3;
+}
+
+.jquery-section:hover {
+  background: #EBEFF2;
+}
+.jquery-section:hover .jquery-button {
+  opacity: 1;
+}
+.jquery-section:hover .jquery-cover {
+  transform: rotateY(-120deg);
+}
+.jquery-section:hover .jquery-inner {
+  background-color: #2672ae;
+}
+.jquery-section:hover .jquery-outer {
+  background-color: #143b5a;
+}
+.jquery-section:hover .jquery-cover, .jquery-section:hover .jquery-inner, .jquery-section:hover .jquery-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+
+//////////////////// JS
+.JS-section, .JS-section * {
+  box-sizing: border-box;
+}
+
+.JS-section, .JS-section div {
+  transition-duration: 0.6s;
+}
+
+.JS-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.JS-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.JS-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$orangeFonce;
+}
+
+.JS-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.JS-inner, .JS-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.JS-inner:after, .JS-outer:after {
+  content: url('../img/logoJS.svg');
+}
+
+.JS-outer {
+  background-color:$orangeFonce;
+  transform: translateZ(0.25em);
+}
+
+.JS-inner {
+  background-color: $orange;
+}
+
+.JS-section:hover {
+  background: #EBEFF2;
+}
+.JS-section:hover .JS-button {
+  opacity: 1;
+}
+.JS-section:hover .JS-cover {
+  transform: rotateY(-120deg);
+}
+.JS-section:hover .JS-inner {
+  background-color: $orange;
+}
+.JS-section:hover .JS-outer {
+  background-color: $orangeFonce;
+}
+.JS-section:hover .JS-cover, .JS-section:hover .JS-inner, .JS-section:hover .JS-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// Spring Boot
+.springBoot-section, .springBoot-section * {
+  box-sizing: border-box;
+}
+
+.springBoot-section, .springBoot-section div {
+  transition-duration: 0.6s;
+}
+
+.springBoot-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.springBoot-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.springBoot-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color: $blue;
+}
+
+.springBoot-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.springBoot-inner, .springBoot-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.springBoot-inner:after, .springBoot-outer:after {
+  content: url('../img/logoSpring.svg');
+}
+
+.springBoot-outer {
+  background-color: $blue;
+  transform: translateZ(0.25em);
+}
+
+.springBoot-inner {
+  background-color: $blueE;
+}
+
+.springBoot-section:hover {
+  background: #EBEFF2;
+}
+.springBoot-section:hover .springBoot-button {
+  opacity: 1;
+}
+.springBoot-section:hover .springBoot-cover {
+  transform: rotateY(-120deg);
+}
+.springBoot-section:hover .springBoot-inner {
+  background-color: $blueE;
+}
+.springBoot-section:hover .springBoot-outer {
+  background-color: $blue;
+}
+.springBoot-section:hover .JS-cover, .JS-section:hover .JS-inner, .JS-section:hover .JS-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// NoSQL
+.NoSQL-section, .NoSQL-section * {
+  box-sizing: border-box;
+}
+
+.NoSQL-section, .NoSQL-section div {
+  transition-duration: 0.6s;
+}
+
+.NoSQL-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.NoSQL-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.NoSQL-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$orangeFonce;
+}
+
+.NoSQL-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.NoSQL-inner, .NoSQL-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.NoSQL-inner:after, .NoSQL-outer:after {
+  content: url('../img/logoNoSQL.svg');
+}
+
+.NoSQL-outer {
+  background-color:$orangeFonce;
+  transform: translateZ(0.25em);
+}
+
+.NoSQL-inner {
+  background-color: $orange;
+}
+
+.NoSQL-section:hover {
+  background: #EBEFF2;
+}
+.NoSQL-section:hover .NoSQL-button {
+  opacity: 1;
+}
+.NoSQL-section:hover .NoSQL-cover {
+  transform: rotateY(-120deg);
+}
+.NoSQL-section:hover .NoSQL-inner {
+  background-color: $orange;
+}
+.NoSQL-section:hover .NoSQL-outer {
+  background-color:$orangeFonce;
+}
+.NoSQL-section:hover .NoSQL-cover, .NoSQL-section:hover .NoSQL-inner, .NoSQL-section:hover .NoSQL-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// HTML
+.HTML-section, .HTML-section * {
+  box-sizing: border-box;
+}
+
+.HTML-section, .HTML-section div {
+  transition-duration: 0.6s;
+}
+
+.HTML-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.HTML-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.HTML-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$orangeFonce;
+}
+
+.HTML-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.HTML-inner, .HTML-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.HTML-inner:after, .HTML-outer:after {
+  content: url('../img/logoHtml.svg');
+}
+
+.HTML-outer {
+  background-color:$orangeFonce;
+  transform: translateZ(0.25em);
+}
+
+.HTML-inner {
+  background-color: $orange;
+}
+
+.HTML-section:hover {
+  background: #EBEFF2;
+}
+.HTML-section:hover .HTML-button {
+  opacity: 1;
+}
+.HTML-section:hover .HTML-cover {
+  transform: rotateY(-120deg);
+}
+.HTML-section:hover .HTML-inner {
+  background-color: $orange;
+}
+.HTML-section:hover .HTML-outer {
+  background-color:$orangeFonce;
+}
+.HTML-section:hover .HTML-cover, .HTML-section:hover .HTML-inner, .HTML-section:hover .HTML-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// CSS
+.CSS-section, .CSS-section * {
+  box-sizing: border-box;
+}
+
+.CSS-section, .CSS-section div {
+  transition-duration: 0.6s;
+}
+
+.CSS-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.CSS-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.CSS-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$orangeFonce;
+}
+
+.CSS-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.CSS-inner, .CSS-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.CSS-inner:after, .CSS-outer:after {
+  content: url('../img/logoCss.svg');
+}
+
+.CSS-outer {
+  background-color:$orangeFonce;
+  transform: translateZ(0.25em);
+}
+
+.CSS-inner {
+  background-color: $orange;
+}
+
+.CSS-section:hover {
+  background: #EBEFF2;
+}
+.CSS-section:hover .CSs-button {
+  opacity: 1;
+}
+.CSS-section:hover .CSS-cover {
+  transform: rotateY(-120deg);
+}
+.CSS-section:hover .CSS-inner {
+  background-color: $orange;
+}
+.CSS-section:hover .CSS-outer {
+  background-color:$orangeFonce;
+}
+.CSS-section:hover .CSS-cover, .CSS-section:hover .CSS-inner, .CSS-section:hover .CSS-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// Jquery2
+.Jquery2-section, .Jquery2-section * {
+  box-sizing: border-box;
+}
+
+.Jquery2-section, .Jquery2-section div {
+  transition-duration: 0.6s;
+}
+
+.Jquery2-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.Jquery2-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.Jquery2-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$orangeFonce;
+}
+
+.Jquery2-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.Jquery2-inner, .Jquery2-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.Jquery2-inner:after, .Jquery2-outer:after {
+  content: url('../img/logoJquery.svg');
+}
+
+.Jquery2-outer {
+  background-color:$orangeFonce;
+  transform: translateZ(0.25em);
+}
+
+.Jquery2-inner {
+  background-color: $orange;
+}
+
+.Jquery2-section:hover {
+  background: #EBEFF2;
+}
+.Jquery2-section:hover .Jquery2-button {
+  opacity: 1;
+}
+.Jquery2-section:hover .Jquery2-cover {
+  transform: rotateY(-120deg);
+}
+.Jquery2-section:hover .Jquery2-inner {
+  background-color: $orange;
+}
+.Jquery2-section:hover .Jquery2-outer {
+  background-color:$orangeFonce;
+}
+.Jquery2-section:hover .Jquery2-cover, .Jquery2-section:hover .Jquery2-inner, .Jquery2-section:hover .Jquery2-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// Bootstrapp2
+.Bootstrapp2-section, .Bootstrapp2-section * {
+  box-sizing: border-box;
+}
+
+.Bootstrapp2-section, .Bootstrapp2-section div {
+  transition-duration: 0.6s;
+}
+
+.Bootstrapp2-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.Bootstrapp2-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.Bootstrapp2-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$orangeFonce;
+}
+
+.Bootstrapp2-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.Bootstrapp2-inner, .Bootstrapp2-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.Bootstrapp2-inner:after, .Bootstrapp2-outer:after {
+  content: url('../img/logoBootstrap.svg');
+}
+
+.Bootstrapp2-outer {
+  background-color:$orangeFonce;
+  transform: translateZ(0.25em);
+}
+
+.Bootstrapp2-inner {
+  background-color: $orange;
+}
+
+.Bootstrapp2-section:hover {
+  background: #EBEFF2;
+}
+.Bootstrapp2-section:hover .Bootstrapp2-button {
+  opacity: 1;
+}
+.Bootstrapp2-section:hover .Bootstrapp2-cover {
+  transform: rotateY(-120deg);
+}
+.Bootstrapp2-section:hover .Bootstrapp2-inner {
+  background-color: $orange;
+}
+.Bootstrapp2-section:hover .Bootstrapp2-outer {
+  background-color:$orangeFonce;
+}
+.Bootstrapp2-section:hover .Bootstrapp2-cover, .Bootstrapp2-section:hover .Bootstrapp2-inner, .Bootstrapp2-section:hover .Bootstrapp2-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}

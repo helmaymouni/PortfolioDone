@@ -43,7 +43,7 @@
     font-family: 'Raleway', sans-serif;
     margin-top: -20px;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     color:$cardsColor;
 }
@@ -52,7 +52,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 60%;
     color: #686868;
-    line-height: 1.5;
+    line-height: 2.38105; 
 }
 .flexWork{
   display: flex;
@@ -64,12 +64,10 @@
 .flexR{
     width: 30%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2%;
 }
-.flexrow{
-    display: flex;
-    flex-direction: row;
-}
+
 .hide{
     display: none;
 }
@@ -77,10 +75,10 @@
     width: 60%;
 }
 .taillediv2{
-    width: 30%;
+    width: 34%;
 }
 .taillediv3{
-    width: 10%;
+    width: 6%;
     margin-top: 0%;
 }
 .btnwork{
@@ -89,21 +87,7 @@
     border-radius: 200px;
     margin-top: 0%;
 }
-.caseL{
-    width: 68px;
-    height: 40px;
-    background: #C4C4C4;
-    border-radius: 20px;
-    margin-bottom: 12%;
-}
-.caseR{
-    width: 68px;
-    height: 40px;
-    background: #C4C4C4;
-    border-radius: 20px;
-    margin-left: 2%;
-    margin-bottom: 12%;
-}
+
 .buttonWork{
     text-decoration: none;
     width: 40%;
@@ -150,4 +134,8 @@
     justify-content: end;
     margin-top: -10%;
 }
-
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0%;
+}
