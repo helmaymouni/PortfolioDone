@@ -1,11 +1,6 @@
-$blueE:#348dd3;
-$blue:#2672ae;
-$blueFonce:#143b5a;
-
-$orangeFonce:#f80;
-$orange: #ffa033;
-
-
+@import "style";
+$gris:#D8D8D8;
+$grisFonce:#A4A4A4;
 
 @font-face {
   font-family: icon;
@@ -45,7 +40,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color: $blue;
+  color: $gris;
 }
 
 .hibernate-cover {
@@ -75,16 +70,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .hibernate-inner:after, .hibernate-outer:after {
-  content: url('../img/logoHibernate.svg');
+  content: url('../img/LOGO/logoHibernate.svg');
 }
 
 .hibernate-outer {
-  background-color:$blue;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .hibernate-inner {
-  background-color: $blueE;
+  background-color: $gris;
 }
 
 .hibernate-section:hover {
@@ -97,10 +92,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .hibernate-section:hover .hibernate-inner {
-  background-color: $blue;
+  background-color: $gris;
 }
 .hibernate-section:hover .hibernate-outer {
-  background-color: $blueFonce;
+  background-color: $grisFonce;
 }
 .hibernate-section:hover .hibernate-cover, .hibernate-section:hover .hibernate-inner, .hibernate-section:hover .hibernate-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -138,7 +133,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color: #2672ae;
+  color: $gris;
 }
 
 .jpa-cover {
@@ -168,16 +163,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .jpa-inner:after, .jpa-outer:after {
-  content: "JPA";
+  content: url('../img/LOGO/logoJpa.svg');
 }
 
 .jpa-outer {
-  background-color: #2672ae;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .jpa-inner {
-  background-color: #348dd3;
+  background-color: $gris;
 }
 
 .jpa-section:hover {
@@ -190,10 +185,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .jpa-section:hover .jpa-inner {
-  background-color: #2672ae;
+  background-color: $gris;
 }
 .jpa-section:hover .jpa-outer {
-  background-color: #143b5a;
+  background-color: $grisFonce;
 }
 .jpa-section:hover .jpa-cover, .jpa-section:hover .jpa-inner, .jpa-section:hover .jpa-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -232,7 +227,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color: #2672ae;
+  color: $gris;
 }
 
 .angular-cover {
@@ -262,16 +257,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .angular-inner::after, .angular-outer::after {
-  content: url('../img/logoAngular.svg');
+  content: url('../img/LOGO/logoAngular.svg');
 }
 
 .angular-outer {
-  background-color: #2672ae;
+  background-color: $gris;
   transform: translateZ(0.25em);
 }
 
 .angular-inner {
-  background-color: #348dd3;
+  background-color: $gris;
 }
 
 .angular-section:hover {
@@ -284,10 +279,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .angular-section:hover .angular-inner {
-  background-color: #2672ae;
+  background-color: $gris;
 }
 .angular-section:hover .angular-outer {
-  background-color: #143b5a;
+  background-color: $grisFonce;
 }
 .angular-section:hover .angular-cover, .angular-section:hover .angular-inner, .angular-section:hover .angular-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -324,7 +319,7 @@ $orange: #ffa033;
 .bootstrap-button a {
   text-decoration: none;
   font-weight: bold;
-  color: #2672ae;
+  color: $gris;
   font-size: 11px;
 }
 
@@ -355,16 +350,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .bootstrap-inner:after, .bootstrap-outer:after {
-  content: url('../img/logoBootstrap.svg');
+  content: url('../img/LOGO/logoBootstrap.svg');
 }
 
 .bootstrap-outer {
-  background-color: #2672ae;
+  background-color: $gris;
   transform: translateZ(0.25em);
 }
 
 .bootstrap-inner {
-  background-color: #348dd3;
+  background-color: $gris;
 }
 
 .bootstrap-section:hover {
@@ -377,10 +372,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .bootstrap-section:hover .bootstrap-inner {
-  background-color: #2672ae;
+  background-color: $gris;
 }
 .bootstrap-section:hover .bootstrap-outer {
-  background-color: #143b5a;
+  background-color: $grisFonce;
 }
 .bootstrap-section:hover .bootstrap-cover, .bootstrap-section:hover .bootstrap-inner, .bootstrap-section:hover .bootstrap-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -400,8 +395,8 @@ $orange: #ffa033;
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
-  margin-left: 3%;
   margin-bottom: 3%;
+  margin-left: 3%;
   padding: 0.375em 0.375em 0;
   min-height: 2.5em;
   background: #A9ADB6;
@@ -419,7 +414,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color: #2672ae;
+  color: $gris;
 }
 
 .jquery-cover {
@@ -449,16 +444,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .jquery-inner:after, .jquery-outer:after {
-  content: url('../img/logoJquery.svg');
+  content: url('../img/LOGO/logoJquery.svg');
 }
 
 .jquery-outer {
-  background-color: #2672ae;
+  background-color: $gris;
   transform: translateZ(0.25em);
 }
 
 .jquery-inner {
-  background-color: #348dd3;
+  background-color: $gris;
 }
 
 .jquery-section:hover {
@@ -471,10 +466,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .jquery-section:hover .jquery-inner {
-  background-color: #2672ae;
+  background-color: $gris;
 }
 .jquery-section:hover .jquery-outer {
-  background-color: #143b5a;
+  background-color: $grisFonce;
 }
 .jquery-section:hover .jquery-cover, .jquery-section:hover .jquery-inner, .jquery-section:hover .jquery-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -512,7 +507,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color:$orangeFonce;
+  color:$gris;
 }
 
 .JS-cover {
@@ -542,20 +537,20 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .JS-inner:after, .JS-outer:after {
-  content: url('../img/logoJS.svg');
+  content: url('../img/LOGO/logoJS.svg');
 }
 
 .JS-outer {
-  background-color:$orangeFonce;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .JS-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 
 .JS-section:hover {
-  background: #EBEFF2;
+  background: $gris;
 }
 .JS-section:hover .JS-button {
   opacity: 1;
@@ -564,10 +559,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .JS-section:hover .JS-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 .JS-section:hover .JS-outer {
-  background-color: $orangeFonce;
+  background-color: $grisFonce;
 }
 .JS-section:hover .JS-cover, .JS-section:hover .JS-inner, .JS-section:hover .JS-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -604,7 +599,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color: $blue;
+  color: $gris;
 }
 
 .springBoot-cover {
@@ -634,16 +629,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .springBoot-inner:after, .springBoot-outer:after {
-  content: url('../img/logoSpring.svg');
+  content: url('../img/LOGO/logoSpring.svg');
 }
 
 .springBoot-outer {
-  background-color: $blue;
+  background-color: $gris;
   transform: translateZ(0.25em);
 }
 
 .springBoot-inner {
-  background-color: $blueE;
+  background-color: $gris;
 }
 
 .springBoot-section:hover {
@@ -656,10 +651,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .springBoot-section:hover .springBoot-inner {
-  background-color: $blueE;
+  background-color: $gris;
 }
 .springBoot-section:hover .springBoot-outer {
-  background-color: $blue;
+  background-color: $grisFonce;
 }
 .springBoot-section:hover .JS-cover, .JS-section:hover .JS-inner, .JS-section:hover .JS-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -679,7 +674,6 @@ $orange: #ffa033;
   display: inline-block;
   position: relative;
   margin-bottom: 3%;
-  margin-left: 3%;
   padding: 0.375em 0.375em 0;
   min-height: 2.5em;
   background: #A9ADB6;
@@ -697,7 +691,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color:$orangeFonce;
+  color:$gris;
 }
 
 .NoSQL-cover {
@@ -727,16 +721,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .NoSQL-inner:after, .NoSQL-outer:after {
-  content: url('../img/logoNoSQL.svg');
+  content: url('../img/LOGO/logoNoSQL.svg');
 }
 
 .NoSQL-outer {
-  background-color:$orangeFonce;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .NoSQL-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 
 .NoSQL-section:hover {
@@ -749,10 +743,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .NoSQL-section:hover .NoSQL-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 .NoSQL-section:hover .NoSQL-outer {
-  background-color:$orangeFonce;
+  background-color:$grisFonce;
 }
 .NoSQL-section:hover .NoSQL-cover, .NoSQL-section:hover .NoSQL-inner, .NoSQL-section:hover .NoSQL-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -772,6 +766,7 @@ $orange: #ffa033;
   display: inline-block;
   position: relative;
   margin-bottom: 3%;
+  margin-left: 3%;
   padding: 0.375em 0.375em 0;
   min-height: 2.5em;
   background: #A9ADB6;
@@ -789,7 +784,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color:$orangeFonce;
+  color:$gris;
 }
 
 .HTML-cover {
@@ -819,16 +814,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .HTML-inner:after, .HTML-outer:after {
-  content: url('../img/logoHtml.svg');
+  content: url('../img/LOGO/logoHtml.svg');
 }
 
 .HTML-outer {
-  background-color:$orangeFonce;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .HTML-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 
 .HTML-section:hover {
@@ -841,10 +836,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .HTML-section:hover .HTML-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 .HTML-section:hover .HTML-outer {
-  background-color:$orangeFonce;
+  background-color:$grisFonce;
 }
 .HTML-section:hover .HTML-cover, .HTML-section:hover .HTML-inner, .HTML-section:hover .HTML-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -864,7 +859,6 @@ $orange: #ffa033;
   display: inline-block;
   position: relative;
   margin-bottom: 3%;
-  margin-left: 3%;
   padding: 0.375em 0.375em 0;
   min-height: 2.5em;
   background: #A9ADB6;
@@ -882,7 +876,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color:$orangeFonce;
+  color:$gris;
 }
 
 .CSS-cover {
@@ -912,16 +906,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .CSS-inner:after, .CSS-outer:after {
-  content: url('../img/logoCss.svg');
+  content: url('../img/LOGO/logoCss.svg');
 }
 
 .CSS-outer {
-  background-color:$orangeFonce;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .CSS-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 
 .CSS-section:hover {
@@ -934,10 +928,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .CSS-section:hover .CSS-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 .CSS-section:hover .CSS-outer {
-  background-color:$orangeFonce;
+  background-color:$grisFonce;
 }
 .CSS-section:hover .CSS-cover, .CSS-section:hover .CSS-inner, .CSS-section:hover .CSS-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -957,7 +951,6 @@ $orange: #ffa033;
   display: inline-block;
   position: relative;
   margin-bottom: 3%;
-  margin-left: 3%;
   padding: 0.375em 0.375em 0;
   min-height: 2.5em;
   background: #A9ADB6;
@@ -972,10 +965,13 @@ $orange: #ffa033;
   opacity: 0;
 }
 .Jquery2-button a {
-  text-decoration: none;
+  //text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color:$orangeFonce;
+  color:$gris;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Jquery2-cover {
@@ -1005,16 +1001,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .Jquery2-inner:after, .Jquery2-outer:after {
-  content: url('../img/logoJquery.svg');
+  content: url('../img/LOGO/logoJquery.svg');
 }
 
 .Jquery2-outer {
-  background-color:$orangeFonce;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .Jquery2-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 
 .Jquery2-section:hover {
@@ -1027,10 +1023,10 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .Jquery2-section:hover .Jquery2-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 .Jquery2-section:hover .Jquery2-outer {
-  background-color:$orangeFonce;
+  background-color:$grisFonce;
 }
 .Jquery2-section:hover .Jquery2-cover, .Jquery2-section:hover .Jquery2-inner, .Jquery2-section:hover .Jquery2-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
@@ -1050,6 +1046,7 @@ $orange: #ffa033;
   display: inline-block;
   position: relative;
   margin-bottom: 3%;
+  margin-left: 3%;
   padding: 0.375em 0.375em 0;
   min-height: 2.5em;
   background: #A9ADB6;
@@ -1067,7 +1064,7 @@ $orange: #ffa033;
   text-decoration: none;
   font-weight: bold;
   font-size: 11px;
-  color:$orangeFonce;
+  color:$gris;
 }
 
 .Bootstrapp2-cover {
@@ -1097,16 +1094,16 @@ $orange: #ffa033;
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .Bootstrapp2-inner:after, .Bootstrapp2-outer:after {
-  content: url('../img/logoBootstrap.svg');
+  content: url('../img/LOGO/logoBootstrap.svg');
 }
 
 .Bootstrapp2-outer {
-  background-color:$orangeFonce;
+  background-color:$gris;
   transform: translateZ(0.25em);
 }
 
 .Bootstrapp2-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 
 .Bootstrapp2-section:hover {
@@ -1119,11 +1116,199 @@ $orange: #ffa033;
   transform: rotateY(-120deg);
 }
 .Bootstrapp2-section:hover .Bootstrapp2-inner {
-  background-color: $orange;
+  background-color: $gris;
 }
 .Bootstrapp2-section:hover .Bootstrapp2-outer {
-  background-color:$orangeFonce;
+  background-color:$grisFonce;
 }
 .Bootstrapp2-section:hover .Bootstrapp2-cover, .Bootstrapp2-section:hover .Bootstrapp2-inner, .Bootstrapp2-section:hover .Bootstrapp2-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+
+
+//////////////////// React
+.react-section, .react-section * {
+  box-sizing: border-box;
+}
+
+.react-section, .react-section div {
+  transition-duration: 0.6s;
+}
+
+.react-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.react-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.react-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$gris;
+}
+
+.react-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.react-inner, .react-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.react-inner:after, .react-outer:after {
+  content: url('../img/LOGO/logoReact.svg');
+}
+
+.react-outer {
+  background-color:$gris;
+  transform: translateZ(0.25em);
+}
+
+.react-inner {
+  background-color: $gris;
+}
+
+.react-section:hover {
+  background: #EBEFF2;
+}
+.react-section:hover .react-button {
+  opacity: 1;
+}
+.react-section:hover .react-cover {
+  transform: rotateY(-120deg);
+}
+.react-section:hover .react-inner {
+  background-color: $gris;
+}
+.react-section:hover .react-outer {
+  background-color:$grisFonce;
+}
+.react-section:hover .react-cover, .react-section:hover .react-inner, .react-section:hover .react-outer {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
+}
+
+//////////////////// RWD
+.RWD-section, .RWD-section * {
+  box-sizing: border-box;
+}
+
+.RWD-section, .RWD-section div {
+  transition-duration: 0.6s;
+}
+
+.RWD-section {
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  padding: 0.375em 0.375em 0;
+  min-height: 2.5em;
+  background: #A9ADB6;
+  border-radius: 0.25em;
+  perspective: 300;
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0.25em 1em rgba(0, 0, 0, 0.1);
+}
+
+.RWD-button {
+  text-align: center;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+.RWD-button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color:$gris;
+}
+
+.RWD-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.RWD-inner, .RWD-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.RWD-inner:after, .RWD-outer:after {
+  content: url('../img/LOGO/logoRWD.svg');
+}
+
+.RWD-outer {
+  background-color:$gris;
+  transform: translateZ(0.25em);
+}
+
+.RWD-inner {
+  background-color: $gris;
+}
+
+.RWD-section:hover {
+  background: #EBEFF2;
+}
+.RWD-section:hover .RWD-button {
+  opacity: 1;
+}
+.RWD-section:hover .RWD-cover {
+  transform: rotateY(-120deg);
+}
+.RWD-section:hover .RWD-inner {
+  background-color: $gris;
+}
+.RWD-section:hover .RWD-outer {
+  background-color:$grisFonce;
+}
+.RWD-section:hover .RWD-cover, .RWD-section:hover .RWD-inner, .RWD-section:hover .RWD-outer {
   transition-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1.1);
 }

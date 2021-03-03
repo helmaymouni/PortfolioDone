@@ -142,5 +142,17 @@ if(SPMDiv){
     text: "Bootstrap ",
     width: "72px"  
   })
+
+  flipCover({
+    css: "react",
+    text: "React JS ",
+    width: "72px"  
+  })
+  
+  flipCover({
+    css: "RWD",
+    text: "Responsive",
+    width: "72px"  
+  })
   
 //////////////////////////////////////////////
