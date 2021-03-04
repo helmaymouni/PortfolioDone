@@ -1,6 +1,14 @@
 $('.header').load('../common/header.html');
 $('.background').load('../common/background.html');
 
+/////////////
+
+$("a.highlight").click(function(){
+  $("a.highlight").scss("background-color", "black");
+$(this).scss("background-color", "red");
+});
+/////////////
+
 var plalogDiv = document.getElementById("plalogDiv");
 let d1 = document.getElementById("d1");
 
