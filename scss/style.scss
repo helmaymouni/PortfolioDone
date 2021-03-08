@@ -58,7 +58,7 @@ $marginLeft:7%;
     padding-bottom: 2%;
     font-weight: bold;
     font-size: 50px;
-    opacity: 0;
+    opacity:0;
     @include animationText();
     animation-name: animation-home-profession;
     animation-delay: 400ms;
@@ -297,6 +297,9 @@ $marginLeft:7%;
     -webkit-animation:spin 6s linear ;
     -moz-animation:spin 6s linear ;
     animation:spin 6s linear ;
+
+    animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin {100% { -webkit-transform: rotate(360deg); } }
@@ -338,4 +341,22 @@ $marginLeft:7%;
       transform: rotateZ(360deg);
     }
   }
-///////////////////////////////////////////////
+//////////////////////////////////////////// Responsive /////////////////////////////
+@media screen and (max-width: 425px) {
+    .home-profession{
+        margin-left: $marginLeft;
+        color:$primary-color;
+        padding-bottom: 2%;
+        font-weight: bold;
+        font-size: 30px;
+    }  
+}
+@media screen and (min-width: 426px ) and (max-width: 768px ) {
+    .home-profession{
+        margin-left: $marginLeft;
+        color:$primary-color;
+        padding-bottom: 2%;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}

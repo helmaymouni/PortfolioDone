@@ -15,6 +15,7 @@ let d1 = document.getElementById("d1");
 var SPMDiv = document.getElementById("SPMDiv");
 let d2 = document.getElementById("d2");
 
+
 if(plalogDiv){
 plalogDiv.addEventListener("click", () => {
     if(getComputedStyle(d1).display != "none"){

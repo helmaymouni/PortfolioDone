@@ -126,3 +126,24 @@
         flex: 1;   
     }
   }
+  @media screen and (min-width: 426px ) and (max-width: 768px ){
+    .flexPosition{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-title{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    .txt-style2{
+        font-size: 12px;
+    }
+    .tailleFlexText{
+        width: 100%;
+        flex:1;
+    }
+    .tailleFlexImg{
+        width: 100%; 
+        flex: 1;   
+    }
+  }
