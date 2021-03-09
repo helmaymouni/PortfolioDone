@@ -107,7 +107,6 @@
 //////////////////////////////////////////// Responsive /////////////////////////////
 @media screen and (max-width: 425px) {
     .flexPosition{
-        display: flex;
         flex-direction: column;
     }
     .about-title{
@@ -116,7 +115,7 @@
         margin-top: 13%;
     }
     .txt-style2{
-        font-size: 13px;
+        font-size: 14px;
     }
     .tailleFlexText{
         width: 100%;
@@ -141,7 +140,7 @@
         margin-top: 13%;
     }
     .txt-style2{
-        font-size: 12px;
+        font-size: 14px;
     }
     .tailleFlexText{
         width: 100%;
