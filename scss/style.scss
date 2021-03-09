@@ -138,12 +138,28 @@ $marginLeft:7%;
 .card{
     width: 17%;
     height: auto;
-    background: $cardsColor;
+    background: transparent;
     border-radius: 25px;
     margin-left: 1%;
     margin-top: 316px;
     mix-blend-mode: normal;
     opacity: 0.93;
+    border: 2px solid $cardsColor;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 3px 6px  beige;
+}
+.card2{
+    width: 17%;
+    height: auto;
+    background: transparent;
+    border-radius: 25px;
+    margin-left: 1%;
+    margin-top: 316px;
+    mix-blend-mode: normal;
+    opacity: 0.93;
+    border: 2px solid $cardsColor;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 3px 6px  beige;
 }
 
 .title-cards{
@@ -242,7 +258,6 @@ $marginLeft:7%;
 }
 
 .imgSVG{
-    //position: absolute;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -279,9 +294,11 @@ $marginLeft:7%;
 }
 
 .ligne{
-    width: 33px;
+    //width: 33px;
+    margin-top: 4%;
+    height: 47px;
+    transform: rotate(0deg);
     border: 3px solid $cardsColor;
-    transform: rotate(90deg);
     margin-left: 24.5%; 
 }
 
@@ -316,9 +333,6 @@ $marginLeft:7%;
     position: relative;
     width: 250px;
     height: 255px;
-    //display: block;
-    //margin-right: auto;
-    //margin-left: auto;
   }
   .circle {
     display: block;
@@ -343,20 +357,61 @@ $marginLeft:7%;
   }
 //////////////////////////////////////////// Responsive /////////////////////////////
 @media screen and (max-width: 425px) {
+    .home-name{
+        font-size: 18px;
+        padding-top: 20%;
+        margin-top: 8%;
+    }
     .home-profession{
-        margin-left: $marginLeft;
-        color:$primary-color;
-        padding-bottom: 2%;
-        font-weight: bold;
-        font-size: 30px;
-    }  
+        font-size: 22px;
+        margin-top: 2%;
+    }
+    .txt-style3{
+        margin-top: 0%;
+    }
+    .ligneH ,.ligneV,.ligne{
+        display: none;
+    }
+    .cardsFlex{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%;
+        margin-left: 3%;
+        margin-top: 290px;
+    }
+    .card2{
+        width: 40%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
 }
 @media screen and (min-width: 426px ) and (max-width: 768px ) {
+    .home-name{
+        font-size: 18px;
+        padding-top: 20%;
+    }
     .home-profession{
-        margin-left: $marginLeft;
-        color:$primary-color;
-        padding-bottom: 2%;
-        font-weight: bold;
-        font-size: 30px;
+        font-size: 22px;
+        margin-top: 2%;
+    }
+    .txt-style3{
+        margin-top: 0%;
+    }
+    .ligneH ,.ligneV,.ligne{
+        display: none;
+    }
+    .cardsFlex{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%;
+        margin-left: 3%;
+        margin-top: 290px;
+    }
+    .card2{
+        width: 40%;
+        margin-left: 3%;
+        margin-top: 5%;
     }
 }

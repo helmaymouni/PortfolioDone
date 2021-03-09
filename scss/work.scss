@@ -8,18 +8,22 @@
     height: auto;
     margin: 40px auto;
     margin-left: $marginLeft;
-    background-color:$workBoxColor;
+    //background-color:$workBoxColor;
+    background-color:transparent;
+    border: 3px solid white;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 3px 6px beige;
     padding: 10px;
     border-radius:20px;
-    mix-blend-mode: normal;
-    opacity: 0.93;
-    -o-border-radius:20px;
-    -webkit-border-radius:20px;
-    -ms-border-radius:20px;
-    -moz-border-radius:20px; 
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    //mix-blend-mode: normal;
+   // opacity: 0.93;
+  //  -o-border-radius:20px;
+   // -webkit-border-radius:20px;
+   // -ms-border-radius:20px;
+    //-moz-border-radius:20px; 
+    //display: flex;
+    //flex-direction: column;
+   // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 #workBoxRight {
     font-size: 20px;
@@ -29,16 +33,20 @@
     margin: 40px auto;
     margin-right: $marginLeft;
     margin-left: 1%;
-    background-color:$workBoxColor;
+    background-color:transparent;
+    border: 3px solid white;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 3px 6px beige;
     padding: 10px;
     border-radius:20px;
-    mix-blend-mode: normal;
-    opacity: 0.93;
-    -o-border-radius:20px;
-    -webkit-border-radius:20px;   
-    -ms-border-radius:20px;
-    -moz-border-radius:20px;  
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    //mix-blend-mode: normal;
+    //opacity: 0.93;
+    
+   // -o-border-radius:20px;
+    //-webkit-border-radius:20px;   
+    //-ms-border-radius:20px;
+    //-moz-border-radius:20px;  
+    //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .txt-work{
     font-size: 16px;
@@ -47,13 +55,15 @@
     font-weight: 600;
     //margin-bottom: 2rem;
     text-transform: uppercase;
-    color:$cardsColor;
+    //color:$cardsColor;
+    color: white;
 }
 .txt-work2{
     margin-top: 0px;
     font-family: 'Raleway', sans-serif;
     font-size: 60%;
-    color: #686868;
+    //color: #686868;
+    color: white;
     line-height: 2.38105; 
 }
 .flexWork{
@@ -94,7 +104,8 @@
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
-    color: #0A0A0A;
+    //color: #0A0A0A;
+    color: white;
     display :flex;
     justify-content: end;
     margin-top: -10%;
@@ -145,3 +156,30 @@
 .leftButton{
     margin-left: 6%;
 }
+
+//////////////////////////////////////////// Responsive /////////////////////////////
+@media screen and (max-width: 425px) {
+    .FlexSkills{
+        flex-direction: column;
+    }
+    .workBoxLeft {
+        width: 80%;
+    }
+    .workBoxRight{
+        width: 80%;
+        margin-left: $marginLeft;
+    }
+   
+  }
+  @media screen and (min-width: 426px ) and (max-width: 768px ){
+    .FlexSkills{
+        flex-direction: column;
+    }
+    #workBoxLeft {
+        width: 80%;
+    }
+    #workBoxRight{
+        width: 80%;
+        margin-left: $marginLeft;
+    }    
+  }
