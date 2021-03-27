@@ -39,7 +39,7 @@
     letter-spacing: .01em;
     padding-inline-start: 0;
     line-height: 2.38105; 
-    margin-top: -25px;
+    margin-top: -28px;
     margin-left: $marginLeft;
     width: 85%;
 }
@@ -107,15 +107,15 @@
 //////////////////////////////////////////// Responsive /////////////////////////////
 @media screen and (max-width: 425px) {
     .flexPosition{
-        display: flex;
         flex-direction: column;
     }
     .about-title{
         font-size: 30px;
         margin-bottom: 5%;
+        margin-top: 13%;
     }
     .txt-style2{
-        font-size: 12px;
+        font-size: 14px;
     }
     .tailleFlexText{
         width: 100%;
@@ -124,6 +124,9 @@
     .tailleFlexImg{
         width: 100%; 
         flex: 1;   
+    }
+    .backgroudImg{
+        margin-left: -6%;
     }
   }
   @media screen and (min-width: 426px ) and (max-width: 768px ){
@@ -134,9 +137,10 @@
     .about-title{
         font-size: 30px;
         margin-bottom: 5%;
+        margin-top: 13%;
     }
     .txt-style2{
-        font-size: 12px;
+        font-size: 14px;
     }
     .tailleFlexText{
         width: 100%;
@@ -145,5 +149,8 @@
     .tailleFlexImg{
         width: 100%; 
         flex: 1;   
+    }
+    .backgroudImg{
+        margin-left: -6%;
     }
   }
