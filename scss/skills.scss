@@ -630,7 +630,7 @@ to {
 //////////////////////////////////////////// Responsive /////////////////////////////
 @media screen and (max-width: 425px) {
     .FlexSkills{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #SkillBox {
         width: 87%;
@@ -655,7 +655,7 @@ to {
 }
   @media screen and (min-width: 426px ) and (max-width: 768px ){
     .FlexSkills{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #SkillBox {
         width: 87%;
