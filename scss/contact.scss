@@ -75,7 +75,10 @@ textarea{
         flex-direction: column;
     }
     .email{
-        font-size: 14px;
+        font-size: 10px;
+    }
+    input,textarea{
+        width: 114%;
     }
     .tailleFlexImgWork{
         display: none;
@@ -89,7 +92,10 @@ textarea{
         flex-direction: column;
     }
     .email{
-        font-size: 14px;
+        font-size: 10px;
+    }
+    input,textarea{
+        width: 114%;
     }
     .tailleFlexImgWork{
         display: none;
